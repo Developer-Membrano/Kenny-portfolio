@@ -1,5 +1,4 @@
 .header{
-
     position: fixed;
     z-index: 1;
     top: 0;
@@ -68,6 +67,11 @@
     .Description{
         font-size: small;
     }
+    div{
+        h1{
+            font-weight: bold;
+        }
+    }
 
 }
 
@@ -80,6 +84,7 @@
         cursor: pointer;
     }
 }
+
 
 
 .footer{

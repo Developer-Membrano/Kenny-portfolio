@@ -12,7 +12,7 @@ const Home = () => {
             <NavigationBar />
             <div className={Header.MainContainer}>
                 <div>
-                    <h1>
+                    <h1 >
                         Hi there! Im Kenny  <br />
                         <span className={Header.intro}> Passionate and an Enthusiast in Technological industry  with an experience in developing web applications 
                         testing and designing user interface.</span> 
