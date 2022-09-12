@@ -12,7 +12,7 @@ const Home = () => {
             <NavigationBar />
             <div className={Header.MainContainer}>
                 <div>
-                    <h1 >
+                    <h1>
                         Hi there! Im Kenny  <br />
                         <span className={Header.intro}> Passionate and an Enthusiast in Technological industry  with an experience in developing web applications 
                         testing and designing user interface.</span> 
@@ -28,47 +28,33 @@ const Home = () => {
 
                 <hr></hr>
 
-                <section>
+                <section className="mt-4 mb-4">
                     <h4>Student Affairs Services Official Website- <i>The National Teachers College</i></h4>
-                    <p>August - July 2022</p>
+                    <p className="mb-4">August - July 2022</p>
 
                     <div className={Header.ImageContainer}>
                          <Link href={"https://sas-website-rho.vercel.app/"}><img src="/img/Homepage_NTC.jpg" className={Header.image} alt="Student Affairs Service Official Website" /></Link>
-                        <p>
+                        <p className="mt-4">
                             Worked on multiple staff to gather datas that are needed to be placed in the website.
                             Designed a user interface that will be officially used by the institution (National Teachers College).
                             Used different Programming languages (React Js  Next Js  TypeScript  Sanity) to developed the website.
                         </p>
-        
                     </div>
                 </section>
 
 
             </div>
 
-            <div className={Header.MainContainer}>
-                <hr></hr>
+            <hr></hr>
 
-                <section>
-                    <h4>Student Affairs Services Official Website- <i>The National Teachers College</i></h4>
-                    <p>August - July 2022</p>
 
+            <div className="mt-4">
+                <h1>Previous Projects</h1>
+                <h5>Project Name <i>Description</i></h5>
                     <div className={Header.ImageContainer}>
                         {/* <Image>
 
                         </Image> */}
-                    </div>
-                </section>
-            </div>
-
-
-            <div>
-                <h1>Previous Projects</h1>
-                <h5>Project Name <i>Description</i></h5>
-                <div className={Header.ImageContainer}>
-                    {/* <Image>
-
-                    </Image> */}
                     </div>
             </div>
 

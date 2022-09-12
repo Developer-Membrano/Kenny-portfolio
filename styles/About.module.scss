@@ -1,0 +1,42 @@
+.about_heading{
+    margin-top: 120px;
+    padding: 0 1em;
+    font-size: xx-large;
+    font-family: 'Poppins';
+    line-height: 35px;
+
+    .greetings{
+        h1{
+            font-weight: bold;
+        }
+        p{
+            
+            margin-top: 20px;
+            font-size: small;
+            line-height: 20px;
+        }
+    }
+
+    .Image{
+        width: 100%;
+        height: auto;
+
+        margin-top: 20px;
+    }
+
+
+}
+
+.About_Me{
+    margin-top: 20px;
+    padding: 0 2.3em;
+    font-family: 'Poppins';
+    font-size: small;
+
+    div{
+        p{
+            text-align: justify;
+            word-spacing: -2px;
+        }   
+    }
+}
