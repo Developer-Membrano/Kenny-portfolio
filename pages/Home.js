@@ -30,7 +30,7 @@ const Home = () => {
                 <hr></hr>
 
                 <section className="mt-4 mb-4">
-                    <h4>Student Affairs Services Official Website- <i>The National Teachers College</i></h4>
+                    <h4>Student Affairs Services Official Website <i>The National Teachers College</i></h4>
                     <p className="mb-4">August - July 2022</p>
 
                     <div className={Header.ImageContainer}>
