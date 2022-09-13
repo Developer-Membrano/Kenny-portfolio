@@ -5,10 +5,6 @@ import About from "../styles/About.module.scss"
 
 
 const about = () => {
-
-   
-
-
     return (
         <>
             <NavigationBar />
