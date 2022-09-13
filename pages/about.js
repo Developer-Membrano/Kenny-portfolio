@@ -13,7 +13,7 @@ const about = () => {
                     <h1>Words.</h1>
                     <h4>About Me</h4>
                     <p>
-                        I'm Passionate about Web Development. I'm excited to pursue opportunities within many industries
+                        Im Passionate about Web Development. Im excited to pursue opportunities within many industries
                         and hoping to become a Fullstack Web Developer.
                     </p>
 
