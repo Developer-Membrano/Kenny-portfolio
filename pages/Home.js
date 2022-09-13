@@ -13,8 +13,8 @@ const Home = () => {
             <div className={Header.MainContainer}>
                 <div>
                     <h1>
-                        Hi there! I'm Kenny,  <br />
-                        <span className={Header.intro}> Passionate and an Enthusiast in Technological industry  with an experience in developing web applications,
+                        Hi there! Im Kenny  <br />
+                        <span className={Header.intro}> Passionate and an Enthusiast in Technological industry  with an experience in developing web applications
                         creating backend and designing user interface.
                         </span> 
 
