@@ -13,16 +13,20 @@ const Home = () => {
             <div className={Header.MainContainer}>
                 <div>
                     <h1>
-                        Hi there! Im Kenny  <br />
-                        <span className={Header.intro}> Passionate and an Enthusiast in Technological industry  with an experience in developing web applications 
-                        testing and designing user interface.</span> 
+                        Hi there! I'm Kenny,  <br />
+                        <span className={Header.intro}> Passionate and an Enthusiast in Technological industry  with an experience in developing web applications,
+                        creating backend and designing user interface.
+                        </span> 
+
                     </h1>
+
 
                     <p className={Header.Description}>
                         Lorem ipsum dolor sit amet  consectetur adipiscing elit  sed do eiusmod tempor incididunt 
                         ut labore et dolore magna aliqua. In hac habitasse platea dictumst vestibulum rhoncus est. 
                         Tristique et egestas quis ipsum suspendisse ultrices gravida. Sed pulvinar proin gravida hendrerit lectus. 
-                        Amet venenatis urna cursus eget nunc. Commodo sed egestas egestas fringilla phasellus faucibus scelerisque. 
+                        Amet venenatis urna cursus eget nunc. Commodo sed egestas egestas fringilla phasellus faucibus scelerisque.
+                        
                     </p>
                 </div>
 

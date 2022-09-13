@@ -14,7 +14,7 @@ const about = () => {
             <NavigationBar />
             <div className={About.about_heading}>
                 <div className={About.greetings}>
-                    <h1>HELLO, thank you for stopping by!</h1>
+                    <h1>HELLO</h1>
                     <p>
                         Anim ad consectetur excepteur adipisicing magna do duis adipisicing quis occaecat irure. Sit aute id nulla amet proident et do aliquip occaecat incididunt non aliquip officia. Amet ad cupidatat ex eu cillum nisi et officia dolore.
                         Mollit ipsum officia velit proident consequat..
