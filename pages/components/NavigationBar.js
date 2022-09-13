@@ -19,7 +19,7 @@ const NavigationBar = () =>{
                 
                 </div>
                 <Link href='/'><li>Works</li></Link>
-                <Link href={'/projects'}><li>Projects</li></Link>
+                <Link href={'/projects'}><li>Posters</li></Link>
                 <Link href={'/about'}><li>About</li></Link>
             </div>
     }

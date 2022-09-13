@@ -10,14 +10,15 @@ const about = () => {
             <NavigationBar />
             <div className={About.about_heading}>
                 <div className={About.greetings}>
-                    <h1>HELLO</h1>
+                    <h1>Words.</h1>
+                    <h4>About Me</h4>
                     <p>
-                        Anim ad consectetur excepteur adipisicing magna do duis adipisicing quis occaecat irure. Sit aute id nulla amet proident et do aliquip occaecat incididunt non aliquip officia. Amet ad cupidatat ex eu cillum nisi et officia dolore.
-                        Mollit ipsum officia velit proident consequat..
+                        I'm Passionate about Web Development. I'm excited to pursue opportunities within many industries
+                        and hoping to become a Fullstack Web Developer.
                     </p>
 
                     <div className={About.divImage}>
-                        <img src={'/img/kenny_Membrano.jpg'} width={100} height={100} className={About.Image}></img>
+                        <img src={'/img/kenny_Membrano.jpg'} className={About.Image}></img>
                     </div>
                 </div>
             </div>
@@ -25,20 +26,99 @@ const about = () => {
             <section className={About.About_Me}>
                 <div>
                     <p>
-                        Consequat qui laborum reprehenderit sit non. Laborum aliquip reprehenderit elit Lorem non do do aliquip sunt ut voluptate exercitation. Cupidatat qui enim aliquip nulla proident magna. Lorem occaecat irure incididunt voluptate mollit occaecat commodo mollit pariatur sunt ex. Do dolore incididunt ut adipisicing tempor ipsum aute fugiat enim id dolor.
-                        Minim sit aliqua do ex sint nostrud dolore ex dolor Lorem et ut irure. Ex cillum ea nisi et mollit adipisicing. Magna aliqua qui occaecat ut est sunt labore laboris sit ullamco tempor. Do dolor laborum eu id ullamco minim non irure. Eiusmod velit ullamco labore enim eu dolor ea nostrud minim aliqua aliquip esse irure sint. Ex cupidatat do id consectetur exercitation quis fugiat commodo incididunt occaecat.
-                        Sit veniam proident elit non eiusmod ullamco anim fugiat. Culpa anim eiusmod dolor ut enim adipisicing ullamco voluptate id adipisicing occaecat. Laborum ad anim non aliquip et in ea eu Lorem ipsum deserunt sint. Deserunt ad velit labore velit reprehenderit sint qui id magna ad id minim.
-                        Officia dolor Lorem enim nostrud incididunt ipsum officia aliquip dolore ea. Excepteur labore aliqua in ad voluptate incididunt dolore voluptate exercitation aliquip laborum.
-                    </p>    
-                    <br></br>
-                    <p>   
-                        Adipisicing amet voluptate incididunt commodo amet sunt ullamco aliqua laborum anim. Nostrud amet occaecat proident anim irure veniam velit eu deserunt reprehenderit voluptate aute labore cupidatat.
-                        Exercitation magna qui sunt deserunt nulla voluptate id ad anim minim fugiat proident aliquip. Esse est ad voluptate Lorem anim incididunt do anim duis reprehenderit sit id dolore. Sint ut non anim nisi est enim velit ex occaecat culpa. Nostrud nulla irure id Lorem reprehenderit commodo ex ea laboris ut ea sit.
-                        Officia sit enim amet exercitation elit est. Aliquip ipsum pariatur cillum culpa velit adipisicing ad id consectetur quis. Commodo amet tempor sunt eiusmod duis in tempor eu. Cupidatat sint mollit do et enim do qui culpa sit qui. Fugiat qui consectetur voluptate nostrud enim.
-                        Consectetur proident aliqua duis ut nisi nulla ex. Eu minim aliqua commodo aliqua. Ipsum aliquip non esse nostrud velit ullamco sint quis occaecat laborum sunt aliqua.
+                        <strong>Kenny Membrano</strong> is a Front-end Developer/ Software Engineer based in Philippines. He earned his Bachelor of Science in Information Technology in
+                        National Teachers College. During his internship he develop a Website (Student Affairs Services) to help the student Government also the School itself
+                        to simply help the students to know more about the school activities, announcement, and students questions.
+
                     </p>
                 </div>
             </section>
+
+            <hr></hr>
+
+            <section className={About.Tools}>
+                <div>
+                    <div className={About.Arrow_Direction}>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="#839788" className="w-40 h-40">
+                            <path strokeLinecap="round" strokeLinejoin="round" d="M15 15l-6 6m0 0l-6-6m6 6V9a6 6 0 0112 0v3" />
+                        </svg>
+                    </div>
+                    <h1>Tools That I Use</h1>
+                </div>
+            </section>
+
+            <section>
+                <div className={About.ToolsIUse}>
+                    <div>
+                        <div className={About.Web_dev}>
+                            <div className={About.Title}>
+                                <h3>WEB DEVELOPMENT</h3>
+                                <p>
+                                    I can Develop Web Applications
+                                    HTML, CSS, JAVASCRIPT | NODE JS | MYSQL
+                                </p>
+                            </div>
+
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={0.8} stroke="currentColor" className="w-20 h-20">
+                                <path strokeLinecap="round" strokeLinejoin="round" d="M6.75 7.5l3 2.25-3 2.25m4.5 0h3m-9 8.25h13.5A2.25 2.25 0 0021 18V6a2.25 2.25 0 00-2.25-2.25H5.25A2.25 2.25 0 003 6v12a2.25 2.25 0 002.25 2.25z" />
+                            </svg>
+
+                        </div>
+                    </div>
+
+
+                    <div>
+                        <div className={About.Web_dev}>
+                            <div className={About.Title}>
+                                <h3>DESIGN SERVICES</h3>
+                                <p>
+                                    I can create Designs
+                                    FIGMA | Adobe ILLUSTRATION | Adobe PHOTOSHOP
+                                </p>
+                            </div>
+
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={0.8} stroke="currentColor" className="w-20 h-20">
+                                <path strokeLinecap="round" strokeLinejoin="round" d="M9.53 16.122a3 3 0 00-5.78 1.128 2.25 2.25 0 01-2.4 2.245 4.5 4.5 0 008.4-2.245c0-.399-.078-.78-.22-1.128zm0 0a15.998 15.998 0 003.388-1.62m-5.043-.025a15.994 15.994 0 011.622-3.395m3.42 3.42a15.995 15.995 0 004.764-4.648l3.876-5.814a1.151 1.151 0 00-1.597-1.597L14.146 6.32a15.996 15.996 0 00-4.649 4.763m3.42 3.42a6.776 6.776 0 00-3.42-3.42" />
+                            </svg>
+                        </div>
+                    </div>
+
+
+                    <div>
+                        <div className={About.Web_dev}>
+                            <div className={About.Title}>
+                                <h3>RESUME</h3>
+                                <p>
+                                    
+                                    click to view or download my resume.
+                                </p>
+                            </div>
+
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={0.8} stroke="currentColor" className="w-20 h-20">
+                                <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 14.25v-2.625a3.375 3.375 0 00-3.375-3.375h-1.5A1.125 1.125 0 0113.5 7.125v-1.5a3.375 3.375 0 00-3.375-3.375H8.25m.75 12l3 3m0 0l3-3m-3 3v-6m-1.5-9H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 00-9-9z" />
+                            </svg>
+
+                        </div>
+
+                    </div>
+
+
+                </div>
+            </section>
+
+            <hr></hr>
+
+            <footer className={About.Footer}>
+                <div>
+                    <p>Need a Developer?</p>
+                    <h1>Lets Work Together!</h1>
+                    <h3>Job.KennyMembrano@gmail.com</h3>
+                </div>
+                <div className={About.Copyright}>
+                     &#169; 2022 - Kenny Membrano, All rights reserved.
+                </div>
+            </footer>
+
         </>
 
     )

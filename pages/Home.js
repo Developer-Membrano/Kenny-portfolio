@@ -24,9 +24,6 @@ const Home = () => {
                     <p className={Header.Description}>
                         Lorem ipsum dolor sit amet  consectetur adipiscing elit  sed do eiusmod tempor incididunt 
                         ut labore et dolore magna aliqua. In hac habitasse platea dictumst vestibulum rhoncus est. 
-                        Tristique et egestas quis ipsum suspendisse ultrices gravida. Sed pulvinar proin gravida hendrerit lectus. 
-                        Amet venenatis urna cursus eget nunc. Commodo sed egestas egestas fringilla phasellus faucibus scelerisque.
-                        
                     </p>
                 </div>
 
