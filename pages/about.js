@@ -12,11 +12,11 @@ const about = () => {
             <motion.div
                 initial="hidden" animate="visible" variants={{
                     hidden:{
-                    x: -100,
+                    y: 100,
                     opacity: 0,
                     },
                     visible: {
-                    x: 0,
+                    y: 0,
                     opacity: 1,
                     transition: {
                     delay: 1.6

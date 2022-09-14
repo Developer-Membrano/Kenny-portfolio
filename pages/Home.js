@@ -51,26 +51,8 @@ const Home = () => {
 
                 <div className={Header.MainContainer}>
                     <div>
-                        
-                            <motion.div initial="hidden" animate="visible" variants={{
-                            hidden:{
-                                // scale: .8,
-                                y: 300,
-                                opacity: 0,
-                            },
-                            visible: {
-                                // scale: 1,
-                                y: 0,
-                                opacity: 1,
-                                transition: {
-                                    delay: .4
-                                    
-                                }
-                            },
-                        }}>Hi there! Im Kenny </motion.div> 
                         <h1>
-                            <br />
-                            <span className={Header.intro}> Passionate and an Enthusiast in Technological industry  with an experience in developing web applications
+                            <span className={Header.intro}>Hi there! Im Kenny. Passionate and an Enthusiast in Technological industry  with an experience in developing web applications
                             creating backend and designing user interface.
                             </span> 
                         </h1>
