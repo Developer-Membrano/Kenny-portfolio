@@ -19,7 +19,7 @@ const about = () => {
                     x: 0,
                     opacity: 1,
                     transition: {
-                    delay: 1.2
+                    delay: 1.6
                                     
                         }
                     },
