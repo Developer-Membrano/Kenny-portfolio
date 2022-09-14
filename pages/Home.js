@@ -29,6 +29,7 @@ const Home = () => {
                 animate="animateState"
                 exit = "exitState"
                 transition={{
+                    delay: 1.2,
                     duration: 1.5,
                 }}
                 variants={{
@@ -39,7 +40,8 @@ const Home = () => {
                     },
                     animateState: {
                         opacity: 1,
-                        clipPath: "circle(200vh at 100% 100%)"
+                    
+                        clipPath: "circle(300vh at 100% 100%)"
                     },
                 }} 
             >
