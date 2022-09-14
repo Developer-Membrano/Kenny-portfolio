@@ -1,5 +1,6 @@
 import NavigationBar from "./components/NavigationBar";
 import About from "../styles/About.module.scss"
+import { motion } from "framer-motion";
 
 
 
@@ -8,6 +9,24 @@ const about = () => {
     return (
         <>
             <NavigationBar />
+            <motion.div
+                initial="hidden" animate="visible" variants={{
+                    hidden:{
+                    x: -100,
+                    opacity: 0,
+                    },
+                    visible: {
+                    x: 0,
+                    opacity: 1,
+                    transition: {
+                    delay: 1.2
+                                    
+                        }
+                    },
+                }}              
+            
+            >
+
             <div className={About.about_heading}>
                 <div className={About.greetings}>
                     <h1>Words.</h1>
@@ -118,7 +137,8 @@ const about = () => {
                      &#169; 2022 - Kenny Membrano, All rights reserved.
                 </div>
             </footer>
-
+        
+        </motion.div>
         </>
 
     )
