@@ -57,11 +57,6 @@ const about = () => {
 
             <section className={About.Tools}>
                 <div>
-                    <div className={About.Arrow_Direction}>
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="#839788" className="w-40 h-40">
-                            <path strokeLinecap="round" strokeLinejoin="round" d="M15 15l-6 6m0 0l-6-6m6 6V9a6 6 0 0112 0v3" />
-                        </svg>
-                    </div>
                     <h1>Tools That I Use</h1>
                 </div>
             </section>
