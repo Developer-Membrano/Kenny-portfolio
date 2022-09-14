@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import Link from 'next/link'
-
 import Header from '../../styles/Home.module.scss'
+import { motion } from "framer-motion";
 
 const NavigationBar = () =>{
 
@@ -26,15 +26,30 @@ const NavigationBar = () =>{
 
 
     return(
-        <>
-            <header className={Header.header}>
-                <div><h4> Kenny Membrano </h4></div>
-                <div className={Header.BurgerLines} onClick={() => setDisplayMenu(!displayMenu)}>
-                    <div className={Header.LongLine}></div>
-                    <div className={Header.ShortLine}> </div>
-                </div>
-            </header>
-            {menuDisplayed}
+        <>  
+            <motion.div 
+             initial="hidden" animate="visible" variants={{
+                hidden:{
+                    opacity: 0,
+                },
+                visible: {
+                    opacity: 1,
+                    transition: {
+                        delay: 2,
+                    }
+                },
+            }}               
+            >
+                <header className={Header.header}>
+                    <div><h4> Kenny Membrano </h4></div>
+                    <div className={Header.BurgerLines} onClick={() => setDisplayMenu(!displayMenu)}>
+                        <div className={Header.LongLine}></div>
+                        <div className={Header.ShortLine}> </div>
+                    </div>
+                </header>
+                {menuDisplayed}
+            </motion.div>
+
         </>
 
 
