@@ -22,7 +22,7 @@ const Kenny = () => {
             }}
         
         >
-            <h1>Kenny Membrano</h1>
+            <h1>Kenny Membrano.</h1>
         </motion.div>
     )
 }
