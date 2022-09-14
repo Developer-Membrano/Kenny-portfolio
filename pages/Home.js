@@ -77,8 +77,8 @@ const Home = () => {
 
 
                         <p className={Header.Description}>
-                            Lorem ipsum dolor sit amet  consectetur adipiscing elit  sed do eiusmod tempor incididunt 
-                            ut labore et dolore magna aliqua. In hac habitasse platea dictumst vestibulum rhoncus est. 
+                            Lets help each other and turn your ideas to make
+                            your business more profitable.
                         </p>
                     </div>
 
