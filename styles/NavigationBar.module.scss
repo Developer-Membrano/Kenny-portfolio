@@ -1,0 +1,153 @@
+$breakpoints: (
+    "xs": 0,
+    "sm": 380px,
+    "md": 720px,
+    "lg": 960px,
+    "xl": 1200px,
+  );
+  
+  @mixin xs {
+    @media (min-width: map-get($breakpoints, "xs")) {
+      @content;
+    }
+  }
+  
+  @mixin sm {
+    @media (min-width: map-get($breakpoints, "sm")) {
+      @content;
+    }
+  }
+  
+  @mixin md {
+    @media (min-width: map-get($breakpoints, "md")) {
+      @content;
+    }
+  }
+  
+  @mixin lg {
+    @media (min-width: map-get($breakpoints, "lg")) {
+      @content;
+    }
+  }
+  
+  @mixin xl {
+    @media (min-width: map-get($breakpoints, "xl")) {
+      @content;
+    }
+  }
+  
+  @mixin breakpoint($bp: 0) {
+    @media (min-width: $bp) {
+      @content;
+    }
+  }
+
+
+  .NavigationStyles{
+   
+    font-family: 'Poppins';
+    @include xs {
+      color: red;
+    }
+
+
+    @include sm {
+        .overlayMenu{
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            padding: 2em 2.6em;
+            z-index: 999;
+            background-color: #d5bdaf;
+            
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: black;
+
+            .closeMenu{
+                position: absolute;
+                top: 0;
+                right: 0;
+                padding: 2em 2.6em;
+                font-size: medium;
+            }
+            .List{
+                display: flex;
+                flex-direction: column;
+                gap: 50px;
+                li{
+                    font-size: 24px;
+                    list-style-type: none;
+                    font-family: 'Poppins';
+                }
+
+            }
+            .overlayMenu{
+                cursor: pointer;
+            }
+        }
+
+        .header{
+            position: fixed;
+            z-index: 1;
+            top: 0;
+            left: 0;
+            right: 0;
+            
+        
+            padding: 2em 2em;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #e7e7e7;
+            color: black;
+        
+            h4{
+                font-family: 'Poppins';
+                cursor: pointer;
+            }
+
+            .BurgerLines{
+                display: flex;
+                flex-direction: column;
+                gap: 6px;
+                cursor: pointer;
+            
+                .LongLine{
+                    width: 40px;
+                    height: 2px;
+                    background-color: black;
+                }
+                .ShortLine{
+                    width: 20px;
+                    height: 2px;
+                    background-color: black;
+                }
+            }
+            
+        }
+
+        
+    }
+    
+    @include md {
+    
+        color: #d5bdaf;
+        
+
+    }
+    @include lg {
+
+    }
+
+    @include xl {
+
+    }
+
+    @include breakpoint(1400px) {
+
+    }
+  }

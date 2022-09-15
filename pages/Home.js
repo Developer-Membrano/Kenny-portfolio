@@ -1,7 +1,5 @@
-
-import Link from "next/link"
-import styles from "../styles/BreakPoints.module.scss"
-import Header from "../styles/Home.module.scss"
+import Link from "next/link";
+import HomeStyles from "../styles/HomeStyles.module.scss"
 import NavigationBar from "./components/NavigationBar"
 import { motion, AnimatePresence } from "framer-motion";
 import { useRouter } from "next/router";
@@ -16,14 +14,17 @@ const Home = () => {
         setShowtTitle(false);
     }, 2000);
 
+
+
+
     return (
         <>
-        { showTitle && (    
-          <Kenny />
-        )}
+            { showTitle && (    
+                <Kenny />
+            )}
    
         <AnimatePresence exitBeforeEnter>
-            <motion.div className={styles.responsive_test}
+            <motion.div className={HomeStyles.overstyles}
                 key = {router.route}
                 initial ="initialState"
                 animate="animateState"
@@ -45,36 +46,35 @@ const Home = () => {
                     },
                 }} 
             >
-
-
                 <NavigationBar/>
-
-
-
-                <div className={Header.MainContainer}>
+                <div className={HomeStyles.HomePage}>
                     <div>
-                        <h1>
-                            <span className={Header.intro}>Hi there! Im Kenny. Passionate and an Enthusiast in Technological industry  with an experience in developing web applications
-                            creating backend and designing user interface.
-                            </span> 
+                        <h1 className={HomeStyles.intro}>
+                            <span>KENNY MEMBRANO</span>  is a Front-end Web Developer &#38; User Interface Designer &#44;
+                                based in Philippines.
+                            
                         </h1>
-
-
-                        <p className={Header.Description}>
-                            Lets help each other and turn your ideas to make
-                            your business more profitable.
-                        </p>
+                        <div className={HomeStyles.DescriptionContainer}>
+                            <p className={HomeStyles.introductionWord}>INTRODUCTION</p>
+                            <p className={HomeStyles.Description}>
+                                Passionate and an Enthusiast in Technological industry  with an experience in developing web applications
+                                creating backend and designing user interface.
+                                Lets help each other and turn your ideas to make
+                                your business more profitable.
+                            </p>
+                        </div>
                     </div>
-
+                    
                     <hr></hr>
+                
 
-                    <section className="mt-4 mb-4">
+                    <section className={HomeStyles.ProjectSection}>
                         <h4>Student Affairs Services Official Website <i>The National Teachers College</i></h4>
-                        <p className="mb-4">August - July 2022</p>
+                        <h5>August - July 2022</h5>
 
-                        <div className={Header.ImageContainer}>
-                            <Link href={"https://sas-website-rho.vercel.app/"}><img src="/img/Homepage_NTC.jpg" className={Header.image} alt="Student Affairs Service Official Website" /></Link>
-                            <p className="mt-4">
+                        <div className={HomeStyles.ImageContainer}>
+                            <Link href={"https://sas-website-rho.vercel.app/"}><img src="/img/Homepage_NTC.jpg" className={HomeStyles.image} alt="Student Affairs Service Official Website" /></Link>
+                            <p>
                                 Worked on multiple staff to gather datas that are needed to be placed in the website.
                                 Designed a user interface that will be officially used by the institution (National Teachers College).
                                 Used different Programming languages (React Js  Next Js  TypeScript  Sanity) to developed the website.
@@ -82,28 +82,27 @@ const Home = () => {
                         </div>
                     </section>
 
+                
 
-                </div>
 
                 <hr></hr>
 
 
-                <div className="mt-4">
-                    <h1>Previous Projects</h1>
-                    <h5>Project Name <i>Description</i></h5>
-                        <div className={Header.ImageContainer}>
-                            {/* <Image>
+                    <div className="mt-4">
+                        <h1>Previous Projects</h1>
+                        <h5>Project Name <i>Description</i></h5>
+                            <div className={HomeStyles.ImageContainer}>
 
-                            </Image> */}
-                        </div>
+                            </div>
+                    </div>
+
+
+                    <footer className={HomeStyles.footer}>
+                        <div><h1> Email | </h1></div>
+                        <div><h1> LinkedIn | </h1></div>
+                        <div><h1> Resume</h1></div>
+                    </footer>
                 </div>
-
-
-                <footer className={Header.footer}>
-                    <div><h1> Email | </h1></div>
-                    <div><h1> LinkedIn | </h1></div>
-                    <div><h1> Resume</h1></div>
-                </footer>
 
             </motion.div>
         </AnimatePresence>

@@ -43,9 +43,13 @@ const projects = () => {
                             },
                         }}                    
                     >
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1} stroke="currentColor" className= "w-20 h-20">
-                            <path strokeLinecap="round" strokeLinejoin="round" d="M15 15l-6 6m0 0l-6-6m6 6V9a6 6 0 0112 0v3" />
-                        </svg>
+                        <lord-icon
+                            src="https://cdn.lordicon.com/bgywtgwo.json"
+                            trigger="hover"
+                            colors="primary:#121331,secondary:#08a88a"
+                            stroke="55"
+                            style={{width: '200px', height: '200px'}}>
+                        </lord-icon>
                     </motion.div>
 
                 </div>
@@ -67,6 +71,7 @@ const projects = () => {
             
             >            
                 <section>
+
                     <div className= {Projects.parent}>
                         <div className={Projects.div1}>
                             <img src={"/img/Main-Poster_Audition.png"} />
