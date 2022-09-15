@@ -9,7 +9,7 @@ export default function Document() {
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="true" />
         <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Raleway:wght@700&family=Nova+Mono&family=Romanesco&display=swap" rel="stylesheet" />
-        <script src="https://cdn.lordicon.com/xdjxvujz.js"></script>
+
         
       </Head>
       <body>

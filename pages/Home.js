@@ -41,8 +41,7 @@ const Home = () => {
                     },
                     animateState: {
                         opacity: 1,
-                    
-                        clipPath: "circle(300vh at 100% 100%)"
+                        clipPath: "circle(400vh at 100% 100%)"
                     },
                 }} 
             >
