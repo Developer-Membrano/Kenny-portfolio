@@ -5,6 +5,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { useRouter } from "next/router";
 import Kenny from "./Kenny";
 import { useState } from "react";
+import Footer from "./components/Footer";
 
 
 const Home = () => {
@@ -103,6 +104,7 @@ const Home = () => {
                     </footer>
                 </div>
 
+            <Footer />   
             </motion.div>
         </AnimatePresence>
         </>
