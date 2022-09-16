@@ -1,11 +1,16 @@
 import NavigationBar from "./components/NavigationBar";
 import Projects from "../styles/Projects.module.scss"
 import { motion } from "framer-motion";
+import Head from "next/head";
 
 
 const projects = () => {
     return(
         <>
+              <Head>
+              <link rel="icon" type="image" href="img/Logo-WhiteBG.png"></link>
+                <title>Kenny portfolio</title>
+              </Head>
             <NavigationBar />
                 <div className={Projects.Heading}>
                     <motion.div
