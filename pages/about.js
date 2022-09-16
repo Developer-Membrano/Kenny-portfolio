@@ -1,6 +1,7 @@
 import NavigationBar from "./components/NavigationBar";
 import About from "../styles/About.module.scss"
 import { motion } from "framer-motion";
+import Head from "next/head";
 
 
 
@@ -9,7 +10,7 @@ const about = () => {
     return (
         <>
             <NavigationBar />
-            <motion.div
+            <motion.div className={About.aboutStyles}
                 initial="hidden" animate="visible" variants={{
                     hidden:{
                     y: 100,
@@ -19,24 +20,35 @@ const about = () => {
                     y: 0,
                     opacity: 1,
                     transition: {
-                    delay: 1.6
-                                    
+                    delay: 1.2,
+
                         }
                     },
                 }}              
             
-            >
-
+            > 
+            <Head>
+            <link rel="icon" type="image" href="img/Logo-WhiteBG.png"></link>
+                <title>Kenny Portfolio</title>
+            </Head>
             <div className={About.about_heading}>
                 <div className={About.greetings}>
-                    <h1>Words.</h1>
-                    <h4>About Me</h4>
-                    <p>
-                        Im Passionate about Web Development. Im excited to pursue opportunities within many industries
+                    <h1>Hello! I am</h1>
+                    <h4>Kenny Membrano a Front-end Web Developer, UI Designer and Programmer. </h4>
+                    <p className={About.descriptions}>
+                        I&#39;m Passionate about Web Development. Im excited to pursue opportunities within many industries
                         and hoping to become a Fullstack Web Developer.
                     </p>
 
                     <div className={About.divImage}>
+                        <div className ={About.IntroductionContainer}>
+                            <p className={About.Quotes}>
+                                &#34; 
+                                Have the courage to follow your heart and intuition. They somehow know what you
+                                truly want to become.
+                                &#34; - Steve Jobs
+                            </p>
+                        </div>
                         <img src={'/img/kenny_Membrano.jpg'} className={About.Image}></img>
                     </div>
                 </div>
@@ -44,6 +56,7 @@ const about = () => {
 
             <section className={About.About_Me}>
                 <div>
+                    <p className={About.myStory}>INTRODUCTION 01...</p>
                     <p>
                         <strong>Kenny Membrano</strong> is a Front-end Developer/ Software Engineer based in Philippines. He earned his Bachelor of Science in Information Technology in
                         National Teachers College. During his internship he develop a Website (Student Affairs Services) to help the student Government also the School itself
@@ -121,6 +134,8 @@ const about = () => {
             </section>
 
             <hr></hr>
+            
+
 
             <footer className={About.Footer}>
                 <div>
@@ -129,10 +144,9 @@ const about = () => {
                     <h3>Job.KennyMembrano@gmail.com</h3>
                 </div>
                 <div className={About.Copyright}>
-                     &#169; 2022 - Kenny Membrano, All rights reserved.
+                    Copyright &#169; 2022 - Kenny Membrano, All rights reserved.
                 </div>
             </footer>
-        
         </motion.div>
         </>
 
