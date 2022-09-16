@@ -1,0 +1,106 @@
+$breakpoints: (
+    "xs": 0,
+    "sm": 380px,
+    "md": 720px,
+    "lg": 960px,
+    "xl": 1200px,
+  );
+  
+  @mixin xs {
+    @media (min-width: map-get($breakpoints, "xs")) {
+      @content;
+    }
+  }
+  
+  @mixin sm {
+    @media (min-width: map-get($breakpoints, "sm")) {
+      @content;
+    }
+  }
+  
+  @mixin md {
+    @media (min-width: map-get($breakpoints, "md")) {
+      @content;
+    }
+  }
+  
+  @mixin lg {
+    @media (min-width: map-get($breakpoints, "lg")) {
+      @content;
+    }
+  }
+  
+  @mixin xl {
+    @media (min-width: map-get($breakpoints, "xl")) {
+      @content;
+    }
+  }
+  
+  @mixin breakpoint($bp: 0) {
+    @media (min-width: $bp) {
+      @content;
+    }
+  }
+
+
+  .FooterClassStyle{
+   
+    font-family: 'Poppins';
+    @include xs {
+      
+    }
+
+
+    @include sm {
+
+        .Footer{
+            padding: 5em 2em;
+            margin-top: 20px;
+            background-color: #bcb8b1;
+        
+            div{
+                text-align: center;
+        
+                p{
+                    font-size: 14px;
+                    font-family: 'Raleway';
+                    font-weight: 400;
+                }
+        
+                h1{
+                    font-weight: 700;
+                    font-size: 25px;
+                    font-family: 'Poppins';
+                }
+        
+                h3{
+                    font-weight: 600;
+                    text-decoration: underline;
+                    font-family: 'Poppins';
+                    font-size: 16px;
+                }
+            }
+        
+            .Copyright{
+                margin-top: 20px;
+                font-size: 14px;
+            }
+        }
+        
+    }
+    
+    @include md {
+    
+    }
+    @include lg {
+
+    }
+
+    @include xl {
+
+    }
+
+    @include breakpoint(1400px) {
+
+    }
+  }
