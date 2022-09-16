@@ -2,6 +2,7 @@ import NavigationBar from "./components/NavigationBar";
 import Projects from "../styles/Projects.module.scss"
 import { motion } from "framer-motion";
 import Head from "next/head";
+import Footer from "./components/Footer";
 
 
 const projects = () => {
@@ -49,7 +50,6 @@ const projects = () => {
                         }}                    
                     >
                         <lord-icon
-                            src="https://cdn.lordicon.com/bgywtgwo.json"
                             trigger="hover"
                             colors="primary:#121331,secondary:#08a88a"
                             stroke="55"
@@ -68,34 +68,39 @@ const projects = () => {
                     x: 0,
                     opacity: 1,
                     transition: {
-                    delay: 1.2
+                    delay: 1
                                     
                         }
                     },
                 }}            
             
             >            
-                <section>
-
+                <section className = {Projects.listOfProject}>
+                    <div className={Projects.ProjectTitleContainer}>
+                        <h3 className={Projects.ProjectTitle}>Posters I created for being a member of HATAW TANGLAW CLUB <i>- September 2020 - 2022</i> </h3>
+                        
+                    </div>
                     <div className= {Projects.parent}>
                         <div className={Projects.div1}>
-                            <img src={"/img/Main-Poster_Audition.png"} />
+                            <img src={"/img/Main-Poster_Audition.webp"} />
                         </div>
                         <div className={Projects.div2}> 
-                            <img src={"/img/Feb_Event_poster.png"} />
+                            <img src={"/img/Feb_Event_poster.webp"} />
                         </div>
                         <div className={Projects.div3}> 
-                            <img src={"/img/Solo_Group_Audition.png"} />
+                            <img src={"/img/Solo_Group_Audition.webp"} />
                         </div>
                         <div className={Projects.div4}> 
-                            <img src={"/img/womens_month.jpg"} />
+                            <img src={"/img/womens_month.webp"} />
                         </div>
                         <div className={Projects.div5}> 
-                            <img src={"/img/women_empowerment.png"} />
-                            <img src={"/img/stream_background.png"} />        
+                            <img src={"/img/women_empowerment.webp"} />
+                            <img src={"/img/stream_background.webp"} />        
                         </div>
                     </div>
                 </section>
+
+                <Footer />
             </motion.div>
         </>
     )
