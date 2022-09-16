@@ -2,6 +2,7 @@ import NavigationBar from "./components/NavigationBar";
 import About from "../styles/About.module.scss"
 import { motion } from "framer-motion";
 import Head from "next/head";
+import Footer from "./components/Footer";
 
 
 
@@ -49,7 +50,7 @@ const about = () => {
                                 &#34; - Steve Jobs
                             </p>
                         </div>
-                        <img src={'/img/kenny_Membrano.jpg'} className={About.Image}></img>
+                        <img src={'/img/kenny_Membrano.webp'} className={About.Image}></img>
                     </div>
                 </div>
             </div>
@@ -136,17 +137,7 @@ const about = () => {
             <hr></hr>
             
 
-
-            <footer className={About.Footer}>
-                <div>
-                    <p>Need a Developer?</p>
-                    <h1>Lets Work Together!</h1>
-                    <h3>Job.KennyMembrano@gmail.com</h3>
-                </div>
-                <div className={About.Copyright}>
-                    Copyright &#169; 2022 - Kenny Membrano, All rights reserved.
-                </div>
-            </footer>
+        <Footer />
         </motion.div>
         </>
 
