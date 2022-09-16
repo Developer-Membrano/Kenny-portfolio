@@ -166,40 +166,6 @@ $breakpoints: (
             }
         }
         
-        
-        
-        .Footer{
-            padding: 1em 2em;
-            margin-top: 20px;
-        
-            div{
-                text-align: center;
-        
-                p{
-                    font-size: 14px;
-                    font-family: 'Raleway';
-                    font-weight: 400;
-                }
-        
-                h1{
-                    font-weight: 700;
-                    font-size: 25px;
-                    font-family: 'Poppins';
-                }
-        
-                h3{
-                    font-weight: 600;
-                    text-decoration: underline;
-                    font-family: 'Poppins';
-                    font-size: 16px;
-                }
-            }
-        
-            .Copyright{
-                margin-top: 20px;
-                font-size: 14px;
-            }
-        }
     }
     
     @include md {
@@ -292,7 +258,11 @@ $breakpoints: (
     @include xl {
         .descriptions{
             margin-left: 130px;
-
+        }
+        .greetings{
+            h1, h4{
+                width: 80%;
+            }
         }
         .divImage{
 
@@ -305,9 +275,7 @@ $breakpoints: (
                     margin-right: 10px;
                 }
             }
-            .Image{
-              
-            }
+
         }
     }
 
