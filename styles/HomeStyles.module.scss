@@ -102,6 +102,17 @@ $breakpoints: (
           }
         }
       }
+      .ProjectTitle{
+        font-size: 2rem;
+        line-height: 35px;
+        font-family: 'Poppins';
+        font-weight: 100;
+      }
+      .ecommerce{
+        margin: 1.3em 0;
+        padding: 1em;
+        border: 1px solid rgba(0, 0, 0, 0.212);
+      }
       .footer{
         display: flex;
         gap: 2em;

@@ -89,17 +89,17 @@ const Home = () => {
 
 
                     <div className="mt-4">
-                        <h1>Previous Projects</h1>
-                        <h5>Project Name <i>Description</i></h5>
-                            <div className={HomeStyles.ImageContainer}>
-
-                            </div>
+                        <h1 className={HomeStyles.ProjectTitle}>User Interface Design Projects</h1>
+                        <h5>E-commerce Landing Page Design</h5>
+                        <Link href={"https://www.figma.com/file/1lSJH2FnpGYx5rVKJJWqym/UI-Designs?node-id=4%3A90"}>
+                            <img src="/img/E-commerce_project.webp" className={HomeStyles.ecommerce}></img>
+                        </Link>
                     </div>
 
 
                     <footer className={HomeStyles.footer}>
                         <div><h1> Email | </h1></div>
-                        <div><h1> LinkedIn | </h1></div>
+                        <div> <Link href={'https://www.linkedin.com/in/kenny-m-2041911b6'}><h1> LinkedIn | </h1></Link> </div>
                         <div><h1> Resume</h1></div>
                     </footer>
                 </div>
