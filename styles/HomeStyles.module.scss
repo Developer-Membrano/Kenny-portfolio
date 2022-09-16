@@ -92,7 +92,10 @@ $breakpoints: (
           padding: 1.2em 0;
           .image{
               width: 100%;
-              cursor: pointer;
+              
+          }
+          .image:hover{
+            cursor: url('/img/Arrow_icon_svg.svg') 50 50, auto;
           }
           p{
             padding: 1.2em 0;

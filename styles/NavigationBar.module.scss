@@ -73,6 +73,10 @@ $breakpoints: (
                 right: 0;
                 padding: 2em 2.6em;
                 font-size: medium;
+
+                svg{
+                  cursor: pointer;
+                }
             }
             .List{
                 display: flex;
