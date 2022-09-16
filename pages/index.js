@@ -5,7 +5,8 @@ export default function index() {
   return (
     <div>
       <Head>
-        <title>Kenny portfolio</title>
+        <link rel="icon" type="image" href="img/Logo-WhiteBG.png"></link>
+        <title>Kenny Portfolio</title>
       </Head>
       <Home />
     </div>
