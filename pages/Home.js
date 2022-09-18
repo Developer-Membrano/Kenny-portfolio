@@ -32,17 +32,16 @@ const Home = () => {
                 exit = "exitState"
                 transition={{
                     delay: 1.2,
-                    duration: 1.5,
+                    duration: 2,
                 }}
                 variants={{
                     intialState: {
                         opacity: 0,
-                        clipPath: "circle(6s.5% at 50% 50%)",
+
                         
                     },
                     animateState: {
                         opacity: 1,
-                        clipPath: "circle(400vh at 100% 100%)"
                     },
                 }} 
             >
@@ -82,6 +81,7 @@ const Home = () => {
                         </div>
                     </section>
 
+
                 
 
 
@@ -93,6 +93,14 @@ const Home = () => {
                         <h5>E-commerce Landing Page Design</h5>
                         <Link href={"https://www.figma.com/file/1lSJH2FnpGYx5rVKJJWqym/UI-Designs?node-id=4%3A90"}>
                             <img src="/img/E-commerce_project.webp" className={HomeStyles.ecommerce}></img>
+                        </Link>
+                    </div>
+
+                    <div className="mt-4">
+                        <h1 className={HomeStyles.ProjectTitle}>Side Projects</h1>
+                        <h5>Friend List Application</h5>
+                        <Link href={"https://friendlist-application.000webhostapp.com/src/index.php"}>
+                            <img src="/img/friend.webp" className={HomeStyles.ecommerce}></img>
                         </Link>
                     </div>
 
