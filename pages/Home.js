@@ -29,16 +29,14 @@ const Home = () => {
                 key = {router.route}
                 initial ="initialState"
                 animate="animateState"
-                exit = "exitState"
+               
                 transition={{
-                    delay: 1.2,
+                    delay: 2,
                     duration: 2,
                 }}
                 variants={{
                     intialState: {
                         opacity: 0,
-
-                        
                     },
                     animateState: {
                         opacity: 1,
@@ -100,7 +98,7 @@ const Home = () => {
                         <h1 className={HomeStyles.ProjectTitle}>Side Projects</h1>
                         <h5>Friend List Application</h5>
                         <Link href={"https://friendlist-application.000webhostapp.com/src/index.php"}>
-                            <img src="/img/friend.webp" className={HomeStyles.ecommerce}></img>
+                            <img src="/img/friend.webp" className={HomeStyles.friendapp}></img>
                         </Link>
                     </div>
 

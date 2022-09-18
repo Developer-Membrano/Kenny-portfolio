@@ -1,6 +1,6 @@
 $breakpoints: (
     "xs": 0,
-    "sm": 380px,
+    "sm": 370px,
     "md": 720px,
     "lg": 820px,
     "xl": 1920px,
@@ -119,6 +119,11 @@ $breakpoints: (
         padding: 1em;
         border: 1px solid rgba(0, 0, 0, 0.212);
       }
+      .friendapp{
+        margin: 1.3em 0;
+        padding: 1em;
+        border: 1px solid rgba(0, 0, 0, 0.212);
+      }
       .footer{
         display: flex;
         gap: 2em;
@@ -151,6 +156,10 @@ $breakpoints: (
           font-size: 1rem;
         }
       }
+    .friendapp{
+      width: 79%;
+    }  
+      
     }
     @include lg {
 
