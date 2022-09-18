@@ -90,9 +90,10 @@ $breakpoints: (
         .ImageContainer{
           width: 100%;
           padding: 1.2em 0;
+
           .image{
               width: 100%;
-              
+             
           }
           .image:hover{
             cursor: url('/img/Arrow_icon_svg.svg') 50 50, auto;
