@@ -44,7 +44,7 @@ const NavigationBar = () =>{
             >
                 <div className={Navigation.NavigationStyles}>
                     <header className={Navigation.header}>
-                        <div><h4> Kenny Membrano </h4></div>
+                        <Link href='/'><div><h4> Kenny Membrano </h4></div></Link>
                         <div className={Navigation.BurgerLines} onClick={() => setDisplayMenu(!displayMenu)}>
                             <div className={Navigation.LongLine}></div>
                             <div className={Navigation.ShortLine}> </div>
